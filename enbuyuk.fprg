@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win7"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 10:23:07 "/>
+        <attribute name="created" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDk6NTM6MTcgIjsyNjM3"/>
+        <attribute name="edited" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMTA6MjM6MDcgIjsxOzI3MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, buyuk, kucuk" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="buyuk" expression="0"/>
+            <assign variable="kucuk" expression="0"/>
+            <while expression="a!=0">
+                <output expression="&quot;Say&#305; giriniz&quot;" newline="True"/>
+                <input variable="a"/>
+                <if expression="a&gt;buyuk">
+                    <then>
+                        <assign variable="buyuk" expression="a"/>
+                    </then>
+                    <else>
+                        <assign variable="kucuk" expression="a"/>
+                    </else>
+                </if>
+                <output expression="&quot;S&#305;md&#305;ye kadar g&#305;r&#305;len en kucuk say&#305;:&quot;&amp;kucuk&amp;&quot; Simdiye kadar girilen en buyuk sayi:&quot;&amp;buyuk" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

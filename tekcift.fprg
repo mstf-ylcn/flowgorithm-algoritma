@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win7"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 09:13:16 "/>
+        <attribute name="created" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDg6NDA6NTUgIjsyNjM0"/>
+        <attribute name="edited" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDk6MTM6MTYgIjsxOzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, cift, tek" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="1"/>
+            <assign variable="cift" expression="0"/>
+            <assign variable="tek" expression="0"/>
+            <output expression="&quot;say&#305; gir&quot;" newline="True"/>
+            <while expression="sayi&gt;0">
+                <input variable="sayi"/>
+                <if expression="sayi%2==0">
+                    <then>
+                        <output expression="sayi&amp;&quot; Say&#305;s&#305; &#231;ifttir&quot;" newline="True"/>
+                        <assign variable="cift" expression="cift+sayi"/>
+                    </then>
+                    <else>
+                        <output expression="sayi&amp;&quot; Say&#305;s&#305; tektir&quot;" newline="True"/>
+                        <assign variable="tek" expression="tek+sayi"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Giriginiz tek say&#305; toplam&#305;:&quot;&amp;tek&amp;&quot;-Giri&#287;iniz &#231;ift say&#305; toplam&#305;:&quot;&amp;cift" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

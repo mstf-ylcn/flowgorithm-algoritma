@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win7"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 11:26:23 "/>
+        <attribute name="created" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDk6NTM6MTcgIjsyNjM3"/>
+        <attribute name="edited" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMTE6MjY6MjMgIjsyOzI3MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, c, b, top, x1, x2" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="top" expression="0"/>
+            <assign variable="x1" expression="0"/>
+            <assign variable="x2" expression="0"/>
+            <output expression="&quot;Denklemi giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="top" expression="(b*b)-4*a*c"/>
+            <assign variable="top" expression="top^0.5"/>
+            <assign variable="x2" expression="(-b+top)/2*a"/>
+            <assign variable="x1" expression="(-b-top)/2*a"/>
+            <output expression="x2" newline="True"/>
+            <output expression="x1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

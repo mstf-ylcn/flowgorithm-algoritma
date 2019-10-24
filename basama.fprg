@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Win7"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 09:44:04 "/>
+        <attribute name="created" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDg6NDA6NTUgIjsyNjM0"/>
+        <attribute name="edited" value="V2luNztXSU43LUJJTEdJU0FZQVI7MjAxOS0xMC0xNTsiMDk6NDQ6MDQgIjsyOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, binler, y&#252;zler, birler, onbinler, basamak, toplam, onlar, bas, kosul" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="1"/>
+            <assign variable="binler" expression="0"/>
+            <assign variable="y&#252;zler" expression="0"/>
+            <assign variable="onlar" expression="0"/>
+            <assign variable="birler" expression="0"/>
+            <assign variable="onbinler" expression="0"/>
+            <assign variable="basamak" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="bas" expression="0"/>
+            <assign variable="kosul" expression="1"/>
+            <output expression="&quot;kardesim say&#305; gir&quot;" newline="True"/>
+            <while expression="kosul&gt;0">
+                <input variable="sayi"/>
+                <assign variable="kosul" expression="sayi"/>
+                <assign variable="bas" expression="Len(toString(sayi))"/>
+                <if expression="bas&lt;6">
+                    <then>
+                        <assign variable="birler" expression="sayi%10"/>
+                        <assign variable="sayi" expression="sayi/10"/>
+                        <assign variable="onlar" expression="sayi%10"/>
+                        <assign variable="sayi" expression="sayi/10"/>
+                        <assign variable="y&#252;zler" expression="sayi%10"/>
+                        <assign variable="sayi" expression="sayi/10"/>
+                        <assign variable="binler" expression="sayi%10"/>
+                        <assign variable="sayi" expression="sayi/10"/>
+                        <assign variable="onbinler" expression="sayi%10"/>
+                        <assign variable="toplam" expression="birler+onlar+y&#252;zler+binler+onbinler"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;L&#252;ffen 5 basamak veya a&#351;ag&#305;s&#305;n&#305;z giriniz&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Girilen say&#305;n&#305;n basamak say&#305;s&#305;:&quot;&amp;bas&amp;&quot; Rakamlar&#305; toplam&#305;:&quot;&amp;toplam" newline="True"/>
+            </while>
+            <output expression="&quot;Girilen say&#305;n&#305;n basamak say&#305;s&#305;:&quot;&amp;bas&amp;&quot; Rakamlar&#305; toplam&#305;:&quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
